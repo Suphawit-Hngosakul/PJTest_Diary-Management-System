@@ -43,3 +43,27 @@
 |------------|------------------------------|
 | **users**  | Stores user information.     |
 | **diaries**| Stores diary entries.        |
+
+
+
+
+# Install
+
+### Backend
+	npm i bcrypt cors dotenv express jsonwebtoken mongoose morgan
+	npm i nodemon -D
+	npm init -y
+
+### Frontend
+	npm create vite@latest
+	cd frontend
+	npm i axios jwt-decode react-router-dom
+	npm install tailwindcss @tailwindcss/vite
+
+#### vite.config.ts
+	import tailwindcss from '@tailwindcss/vite'
+	export default defineConfig({ plugins: [ tailwindcss(), ],})
+	
+	CSS
+	@import "tailwindcss";
+	
